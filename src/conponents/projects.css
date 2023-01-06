@@ -1,0 +1,88 @@
+.projects{
+    position: relative;
+    width: 80vw;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 100px;
+}
+
+.projects .body{
+    display: flex;
+    flex-direction: row;
+    column-gap: 70px;
+    justify-content: space-evenly;
+    margin-top: 100px;
+}
+
+.projects .body .abtprjct{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 30px;
+}
+.projects .body .abtprjct a button {
+    border: none;
+    text-decoration: none;
+    color: white;
+    background-color: #3D9970;
+    padding: 15px 40px;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    transition: 0.4s;
+}
+.projects .body .abtprjct button:hover{
+    transform: translateY(-4px);
+}
+
+.projects .body .abtprjct p{
+    font-size: 16px;
+    color: rgb(89, 87, 87);
+}
+.projects .body .screen img{
+    width: 40vw;
+}
+
+/* .gitLink{
+  width: 100px;
+} */
+
+@media only screen and (max-width: 600px){
+    .gitLink a{
+        padding: 10px 20px;
+    }
+    .projects{
+        width: 85vw;
+    }
+    .projects .header{
+        width: 96vw;
+    }
+    .projects .header h3{
+        font-size: 18px;
+    }
+    .projects .body{
+        flex-wrap: wrap;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-top: 70px;
+    }
+    .projects{
+        width: 96vw;
+    }
+    .projects .body .screen img{
+        width: 70vw;
+    }
+    .projects .body .abtprjct{
+        row-gap: 15px;
+    }
+     
+    .projects .body img{
+        margin-bottom: 15px;
+    }
+    .projects .body .abtprjct a button{
+        padding: 12px 30px;
+    }
+    
+}

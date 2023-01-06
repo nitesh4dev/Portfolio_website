@@ -1,38 +1,398 @@
-.App {
-  text-align: center;
+ /* @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@700&display=swap');
+  */
+   @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@600&display=swap'); 
+
+ * {
+     margin: 0;
+     padding: 0;
+     font-family: 'Dosis', sans-serif;
+    letter-spacing: 1px;
+ }
+
+ .nav {
+     position: fixed;
+     height: 85px;
+     width: 100%;
+     background-color: #fff;
+     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+     z-index: 2;
+ }
+
+ .main{
+    position: relative;
+    overflow: hidden;
+    /* width: 100%; */
+ }
+
+ body {
+     background-color: #f8fbf8;
+ }
+
+ .nav .logo {
+     position: absolute;
+     display: flex;
+     align-content: center;
+     align-items: center;
+     width: 300px;
+     top: 50%;
+     left: 40px;
+     transform: translateY(-50%);
+ }
+
+ .nav .logo img {
+     border-radius: 50%;
+     cursor: pointer;
+ }
+
+ .nav .logo h3 {
+     margin-left: 20px;
+ }
+
+ .nav .links {
+     position: absolute;
+     right: 30px;
+     top: 50%;
+     transform: translateY(-50%);
+ }
+
+ .nav .links ul {
+     display: flex;
+ }
+
+ .nav .links ul li {
+     list-style: none;
+     margin-right: 35px;
+     cursor: pointer;
+     transition: 0.1s;
+     padding: 5px 10px;
+ }
+
+ .nav .links ul li:hover {
+     color: #3D9970;
+ }
+
+ .nav .links .menuico {
+     display: none;
+ }
+
+ @media only screen and (max-width: 800px) {
+     .nav {
+         height: 70px;
+     }
+
+     .nav .links ul li {
+         font-size: 13.5px;
+         margin-right: 10px;
+     }
+
+     .nav .logo img {
+         width: 40px;
+         height: 40px;
+     }
+
+     .nav .logo {
+         font-size: 13px;
+         left: 5px;
+     }
+
+     .nav .logo h3 {
+         margin-left: 15px;
+         letter-spacing: 0.3px;
+     }
+
+     .nav .links {
+         right: 5px;
+     }
+ }
+
+ @media only screen and (max-width: 600px) {
+     .nav .links ul {
+         display: none;
+     }
+
+     .nav .links .menuico {
+         display: block;
+         margin-right:20px;
+         font-size: 27px;
+         cursor: pointer;
+     }
+ }
+
+ .opnav {
+     width: 100%;
+     height: 25vh;
+     background-color: #fff;
+     position: fixed;
+     top: 70px;
+     z-index: 10;
+     animation: present 0.3s linear;
+     /* overflow-x: hidden; */
+ }
+ @keyframes open { 
+    0%   {opacity: 0;}
+    25%  {opacity: 0.25;}
+    50%  {opacity: 0.5;}
+    75%  {opacity: 0.75;}
+    100% {opacity: 1;}
+ }
+
+ .opnav ul {
+     width: 100%;
+     position: absolute;
+     display: flex;
+     flex-direction: column;
+     height: 100%;
+     text-align: right;
+     align-items: center;
+     justify-content: space-around;
+ }
+
+ .opnav ul li {
+     list-style: none;
+     border-top: 1px solid rgb(199, 195, 195);
+     width: 100%;
+     padding-top: 12px;
+     padding-right: 70px;
+     padding-bottom: 10px;
+     cursor: pointer;
+ }
+
+ .opnav ul :nth-child(4) {
+     border-bottom: 1px solid grey;
+
+ }
+
+ .clnav {
+     display: none;
+     transition: 0.5s;
+ }
+
+ .welcome .karma{
+    display: inline-block;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    font-size: 1.5em;
+ }
+ .welcome .karma{
+    text-align: center;
+ }
+ 
+
+ @media only screen and (max-width: 750px) {
+    .welcome .karma{
+        top: 50%;
+        font-size: 0.6em;
+    }
+ }
+
+ .home{
+     background-image: url(https://res.cloudinary.com/dcf4tkmma/image/upload/v1671705676/Screenshot_20221222_161039_bvilxb.png);
+     background-attachment: fixed;
+     background-size: cover;
+     position: relative;
+     top: 90px;
+     height: 80vh;
+ }
+
+ .home .socialIcons {
+     background-color: #fff;
+     display: flex;
+     flex-direction: column;
+     position: absolute;
+     padding: 10px;
+     height: 250px;
+     width: 45px;
+     left: 20px;
+     top: 50%;
+     transform: translateY(-50%);
+     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+     border-radius: 3px; 
+     z-index: 1;
+ } 
+
+.home .socialIcons ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%; width: 100%; 
+    align-items: center;
+}
+.home .socialIcons ul li a{
+    color: black;
+    font-size: 27px;
+}
+.home .socialIcons ul li{
+    transition: 0.4s;
+    padding: 10px 10px 5px 10px;
+    border-radius: 4px;
+}
+.home .socialIcons ul li:hover{
+    background-color: rgba(61, 153, 112, 0.4);
+}
+ ul li{
+    list-style: none;
+}
+ .intro{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+    height: 100%;
+    justify-content: space-evenly;
+ }
+ .intro .typewriter{
+    text-align: center;
+    margin-top: 40px;
+ }
+ .intro .shortintro{
+    text-align: center;
+ }
+ .intro h1{
+    font-size: 4rem;
+ }
+ .intro h3{
+    font-size: 2.2rem;
+ }
+ .intro h2{
+    font-size: 3rem;
+    color: #3D9970;
+ }
+ .intro .shortintro p{
+    font-size: 20px;
+    color: rgb(89, 87, 87);
+ }
+.makeBtn button{
+    color: white;
+    background-color: #3D9970;
+    padding: 15px 40px;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.4s;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+ }
+ .makeBtn button:hover{
+    transform: translateY(-4px);
+ }
+
+ .main{
+    animation: present 1s linear;
+ }
+ @keyframes present { 
+    0%   {opacity: 0;}
+    25%  {opacity: 0.25;}
+    50%  {opacity: 0.5;}
+    75%  {opacity: 0.75;}
+    100% {opacity: 1;}
+ }
+ @media only screen and (max-width: 900px) {
+    .home{
+        top: 74px;
+        }
+    .home .socialIcons{
+        display: none;
+    }
+ }
+ @media only screen and (max-width: 600px){
+    .home{
+    top: 74px;
+    }
+    .makeBtn button{
+        padding: 12px 30px;
+    }
+    .home{
+        padding: 20px;
+    }
+    .intro h1{
+        font-size: 2.5rem;
+     }
+     .intro h3{
+        font-size: 1.5rem;
+     }
+     .intro .shortintro p{
+        font-size: 15px;
+     }
+ }
+
+.icon-scroll:before {
+    position: absolute;
+    left: 50%;
+}
+.icon-scroll {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 25px;
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 25px;
+    top: 100%;
+}
+.icon-scroll:before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: black;
+    margin-left: -4px;
+    top: 8px;
+    border-radius: 4px;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-name: scroll
+}
+@keyframes scroll {
+    0% {
+        opacity: 1
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(26px)
+    }
+
+}
+.resume{
+    position: fixed;
+    right: 50px;
+    font-size: 30px;
+    bottom: 50px;
+    background-color: #3D9970;
+    padding: 9px 11px 5px 11px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    z-index: 10;
+    animation: updown infinite 1.5s ;
+}
+@keyframes updown {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(5px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.resume a{
+    color: white;
+}
+@media only screen and (max-width: 700px){
+    .icon-scroll{
+        display: none;
+    }
+    .home{
+        height: 80vh;
+    }
+    .resume{
+        bottom: 20px;
+        right: 20px;
+        font-size: 20px;
+    }
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

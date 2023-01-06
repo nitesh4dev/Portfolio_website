@@ -1,0 +1,140 @@
+.aboutMe{
+   margin-top: 170px;
+   width: 80vw;
+   /* background-color: yellow; */
+   position: relative;
+   left: 50%;
+   transform: translateX(-50%);
+   padding: 30px 30px;
+}
+.aboutMe .header, .projects .header{
+    position: relative;
+    left: 50%; transform: translateX(-50%);
+    width: 70%;
+    font-size: 17px;
+    text-align: center;
+}
+.aboutMe .header h3, .projects .header h3{
+    color: rgb(89, 87, 87);
+    margin-top: 50px;
+}
+.aboutMe .header h1::after, .projects .header h1::after{
+    content: " ";
+    position: absolute;
+    height: 35px;
+    top: 50px; left: 50%;
+    width: 7px;
+    border-radius: 4px;
+    background-color: #3D9970;
+}
+.aboutMe .body{
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    column-gap: 100px;
+    margin-top: 120px;
+}
+.aboutMe .body .getToKnow{
+    width: 100%;
+}
+ p{
+    color: rgb(89, 87, 87);
+    margin-top: 25px;
+    font-size: 17px;
+}
+.aboutMe .body .getToKnow button{
+    color: white;
+    background-color: #3D9970;
+    padding: 15px 40px;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.4s;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+ }
+ .aboutMe .body .getToKnow button:hover{
+    transform: translateY(-4px);
+ }
+
+
+.aboutMe .body .getToKnow b{
+    color: black;
+    font-weight: 1000;
+}
+
+.aboutMe .body .getToKnow .contactBtn{
+    margin-top: 40px;
+}
+.aboutMe .body .skill{
+    width:  30%;
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 20px;
+    width: 30%;
+    height: 100%; width: 100%;
+}
+.aboutMe .body .skill h2{
+    margin-left: 15px;
+}
+.aboutMe .body .skills {
+    color: rgb(89, 87, 87);
+    padding: 10px 15px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    row-gap: 20px;
+    column-gap: 20px;
+    flex-wrap: wrap;
+}
+.aboutMe .body .skills div{
+    font-size: 16px;
+   background-color: #e5e4e2;
+   padding: 15px 30px;
+   border-radius: 4px;
+}
+@media only screen and (max-width: 950px){
+    .aboutMe .body{
+        flex-direction: column;
+    }
+    .aboutMe .body .skill{
+        margin-top: 80px;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    .aboutMe .header, .projects .header{ 
+        width: 96vw;
+    }
+
+    .aboutMe .body .skills{
+        row-gap: 10px;
+        column-gap: 10px;
+    }
+    .aboutMe .body .skills div{
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+    .aboutMe{
+        width: 85vw;
+    }
+    .aboutMe .body{
+        margin-top: 80px;
+    }
+    .aboutMe{
+        margin-top: 140px;
+    }
+    .aboutMe .header h3{
+        font-size: 18px;
+    }
+    .aboutMe .body .getToKnow p{
+        font-size: 15px;
+    }
+    .aboutMe .body .getToKnow button{
+        padding: 12px 30px;
+    }
+}
+
