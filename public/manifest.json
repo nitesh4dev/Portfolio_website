@@ -3,19 +3,9 @@
   "name": "Create React App Sample",
   "icons": [
     {
-      "src": "https://res.cloudinary.com/dcf4tkmma/image/upload/v1671633590/Profile_picture_uturjv.jpg",
+      "src": "favicon.ico",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
-    },
-    {
-      "src": "logo192.png",
-      "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "logo512.png",
-      "type": "image/png",
-      "sizes": "512x512"
     }
   ],
   "start_url": ".",

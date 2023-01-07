@@ -35,7 +35,7 @@
      align-items: center;
      width: 300px;
      top: 50%;
-     left: 40px;
+     left: 50px;
      transform: translateY(-50%);
  }
 
@@ -76,8 +76,11 @@
  }
 
  @media only screen and (max-width: 800px) {
+    .nav .logo {
+        margin-left: 15px;
+    }
      .nav {
-         height: 70px;
+         height: 80px;
      }
 
      .nav .links ul li {
@@ -86,8 +89,8 @@
      }
 
      .nav .logo img {
-         width: 40px;
-         height: 40px;
+         width: 50px;
+         height: 50px;
      }
 
      .nav .logo {
@@ -98,10 +101,11 @@
      .nav .logo h3 {
          margin-left: 15px;
          letter-spacing: 0.3px;
+         font-size: 18px;
      }
 
      .nav .links {
-         right: 5px;
+         right: 4px;
      }
  }
 
@@ -113,20 +117,20 @@
      .nav .links .menuico {
          display: block;
          margin-right:20px;
-         font-size: 27px;
          cursor: pointer;
+         font-size: 30px;
+         margin-top: 4px;
      }
  }
 
  .opnav {
      width: 100%;
-     height: 25vh;
+     height: 30vh;
      background-color: #fff;
      position: fixed;
      top: 70px;
      z-index: 10;
      animation: present 0.3s linear;
-     /* overflow-x: hidden; */
  }
  @keyframes open { 
     0%   {opacity: 0;}
@@ -138,7 +142,7 @@
 
  .opnav ul {
      width: 100%;
-     position: absolute;
+     position: relative;
      display: flex;
      flex-direction: column;
      height: 100%;
@@ -151,12 +155,16 @@
      list-style: none;
      border-top: 1px solid rgb(199, 195, 195);
      width: 100%;
-     padding-top: 12px;
+     padding-top: 13px;
      padding-right: 70px;
      padding-bottom: 10px;
      cursor: pointer;
- }
+     height: 100%;
 
+ }
+ .opnav ul li a:active{
+     color: #3D9970;
+ }
  .opnav ul :nth-child(4) {
      border-bottom: 1px solid grey;
 
@@ -246,7 +254,7 @@
  }
  .intro .typewriter{
     text-align: center;
-    margin-top: 40px;
+    margin-top: 20px;
  }
  .intro .shortintro{
     text-align: center;
@@ -262,7 +270,7 @@
     color: #3D9970;
  }
  .intro .shortintro p{
-    font-size: 20px;
+    font-size: 25px;
     color: rgb(89, 87, 87);
  }
 .makeBtn button{
@@ -299,11 +307,18 @@
     }
  }
  @media only screen and (max-width: 600px){
+    .intro{
+        height: 100%;
+        margin-top: -10px;
+    }
+    .intro p{
+        margin-top: -30px;
+    }
     .home{
     top: 74px;
     }
     .makeBtn button{
-        padding: 12px 30px;
+        padding: 15px 50px;
     }
     .home{
         padding: 20px;
@@ -372,7 +387,7 @@
         transform: translateY(0px);
     }
     50%{
-        transform: translateY(5px);
+        transform: translateY(7px);
     }
     100%{
         transform: translateY(0px);
@@ -383,15 +398,15 @@
 }
 @media only screen and (max-width: 700px){
     .icon-scroll{
-        display: none;
+        top: 97%;
     }
     .home{
         height: 80vh;
     }
     .resume{
-        bottom: 20px;
-        right: 20px;
-        font-size: 20px;
+        bottom: 40px;
+        right: 30px;
+        font-size: 30px;
     }
 }
 

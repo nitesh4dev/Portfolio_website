@@ -107,7 +107,7 @@
 
 @media only screen and (max-width: 700px){
     .aboutMe .header, .projects .header{ 
-        width: 96vw;
+        width: 94vw;
     }
 
     .aboutMe .body .skills{

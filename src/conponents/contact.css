@@ -96,7 +96,7 @@ input[type=submit]:hover{
 
 @media only screen and (max-width: 600px){
     .contact .header{
-        width: 95vw;
+        width: 94vw;
     }
     .contact .header h3{
         font-size: 18px;
@@ -213,11 +213,11 @@ input[type=submit]:hover{
         height: 65vh;
     }
     .footer .info .social{
-        width: 90%;
+        width: 100%;
         row-gap: 15px;
         margin-top: 20px;
-        margin-left: 20px;
         margin-top: 40px;
+        align-items: center;
     }
     .footer .info .social h2{
         display: none;
@@ -235,7 +235,7 @@ input[type=submit]:hover{
         padding-bottom: -20px;
     }
     .footer .copyright{
-        left: 60%;
+        left: 65%;
         width: 90%;
         top: 65%;
     }

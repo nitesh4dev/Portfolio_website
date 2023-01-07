@@ -44,7 +44,7 @@ const Home = () => {
                 <div className="icon-scroll"></div>
             </div>
             <div className="resume">
-                <a href="https://drive.google.com/file/d/1AkIJaGYi3p1O-pHXgQFTY4vE5g5gSZDd/view?usp=share_link" target="_blank"><MdOutlineSimCardDownload/></a>
+                <a href="https://drive.google.com/file/d/1AkIJaGYi3p1O-pHXgQFTY4vE5g5gSZDd/view?usp=share_link"><MdOutlineSimCardDownload/></a>
             </div>
            
         </div>
