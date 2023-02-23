@@ -11,10 +11,10 @@ const Contact = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        toast.info("Thanks for showing your interest will get back to you soon", {
+        toast.success("Thanks for showing your interest will get back to you soon", {
             position: "top-center",
-            autoClose: 5000,
-            hideProgressBar: false,
+            autoClose: 4000,
+            hideProgressBar: true,
             closeOnClick: true,
             pauseOnHover: true,
             draggable: true,
