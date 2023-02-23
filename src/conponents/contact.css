@@ -3,7 +3,7 @@
     background-attachment: fixed;
     background-size: cover;
     position: relative;
-    height: 130vh;
+    height: 1000px;
     top: 100px;
 }
 .contact .header{
@@ -76,9 +76,10 @@ textarea{
     padding: 10px 10px;
 }
 input[type=submit]{
+    height: 60px;
     color: white;
     background-color: #3D9970;
-    font-size: 18px;
+    font-size: 22px;
     border-radius: 4px;
     cursor: pointer;
     border: none;
@@ -88,11 +89,16 @@ input[type=submit]{
 input:focus, textarea:focus{
     outline: 2px solid #3D9970;
     border: none;
-    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    box-shadow: #3D9970 0px 4px 8px -2px, #3D9970 0px 0px 0px 1px;
 }
 input[type=submit]:hover{
     transform: translateY(-4px);
 }
+
+input[type=text]:focus, textarea:focus {
+    box-shadow: 0 0 5pt 2pt #D3D3D3;
+    outline-width: 0px;
+  }
 
 @media only screen and (max-width: 600px){
     .contact .header{

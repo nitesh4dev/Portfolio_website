@@ -1,8 +1,8 @@
 import React from "react";
 import { BsInstagram, BsFacebook, BsGithub, BsLinkedin } from "react-icons/bs";
-import {MdOutlineSimCardDownload} from "react-icons/md"
+import { MdOutlineSimCardDownload } from "react-icons/md"
 import { Typewriter } from 'react-simple-typewriter';
-import {Link} from "react-scroll";
+import { Link } from "react-scroll";
 
 const Home = () => {
     return (
@@ -35,8 +35,8 @@ const Home = () => {
                     </h2>
                 </div>
                 <div className="shortintro">
-                    <p>A Frontend focused Web Developer building the Frontend of Websites and Web <br />
-                        Applications that leads to the success of the overall product</p>
+                    <p>I am a Full stack web developer with a passion for learning. 
+                        I thrive on new challenges, embrace change, and am constantly seeking to expand my skill set.</p>
                 </div>
                 <div className="makeBtn">
                     <Link to="projects" smooth={true} duration={1000}><button>PROJECTS</button></Link>
@@ -44,9 +44,8 @@ const Home = () => {
                 <div className="icon-scroll"></div>
             </div>
             <div className="resume">
-                <a href="https://drive.google.com/file/d/1AkIJaGYi3p1O-pHXgQFTY4vE5g5gSZDd/view?usp=share_link"><MdOutlineSimCardDownload/></a>
+                <a href="https://drive.google.com/file/d/1AkIJaGYi3p1O-pHXgQFTY4vE5g5gSZDd/view?usp=share_link"><MdOutlineSimCardDownload /></a>
             </div>
-           
         </div>
     )
 }

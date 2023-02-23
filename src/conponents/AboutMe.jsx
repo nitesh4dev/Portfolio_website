@@ -2,7 +2,6 @@ import React from "react";
 import "./AboutMe.css";
 import { RiExternalLinkFill } from "react-icons/ri";
 import { Link } from "react-scroll";
-import zIndex from "@mui/material/styles/zIndex";
 
 const AboutMe = () => {
     return (
@@ -37,6 +36,7 @@ const AboutMe = () => {
                         <div>JavaScript</div>
                         <div>React</div>
                         <div>Express</div>
+                        <div>Firebase</div>
                         <div>MongoDB</div>
                         <div>Bootstrap</div>
                         <div>Git</div>
