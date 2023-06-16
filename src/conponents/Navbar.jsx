@@ -3,6 +3,7 @@ import { TbMenu2 } from "react-icons/tb";
 import { MdClose } from "react-icons/md";
 import { Link } from "react-scroll";
 import "../App.css"
+import photo from '../assets/photo.jpg'
 const Navbar = () => {
     const [open, setOpen] = useState(false);
     const opnav = () =>{
@@ -17,7 +18,7 @@ const Navbar = () => {
         <>
             <div className="nav">
                 <div className="logo">
-                    <img src="https://res.cloudinary.com/dcf4tkmma/image/upload/v1671633590/Profile_picture_uturjv.jpg" height="60px" alt="myphoto" />
+                    <a href="https://niteshvishwakarma.netlify.app"><img src={photo}  alt="myphoto" /></a>
                     <h3>NITESH VISHWAKARMA</h3>
                 </div>
                 <div className="links">

@@ -42,6 +42,8 @@
  .nav .logo img {
      border-radius: 50%;
      cursor: pointer;
+     height: 50px;
+     object-fit: cover;
  }
 
  .nav .logo h3 {
@@ -258,6 +260,7 @@
  }
  .intro .shortintro{
     text-align: center;
+    width: 80vw;
  }
  .intro h1{
     font-size: 4rem;
