@@ -24,7 +24,7 @@ const Home = () => {
                     <h2 className="technologies">
                         {/* Style will be inherited from the parent element */}
                         <Typewriter
-                            words={['React', 'Javascript', 'NodeJs', 'Express', 'HTML', 'CSS', 'Bootstrap', 'Git', 'C/C++ basics', 'NPM']}
+                            words={['React', 'Javascript', 'NodeJs', 'Express', 'HTML', 'CSS', 'Bootstrap', 'Git', 'NPM', 'Firebase']}
                             loop={50}
                             cursor
                             cursorStyle='_'
@@ -35,7 +35,7 @@ const Home = () => {
                     </h2>
                 </div>
                 <div className="shortintro">
-                    <p>I am a Full stack web developer with a passion for learning. 
+                    <p>I am a Full stack web developer with a passion for learning.
                         I thrive on new challenges, embrace change, and am constantly seeking to expand my skill set.</p>
                 </div>
                 <div className="makeBtn">
